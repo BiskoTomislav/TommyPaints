@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxWidth="800.0" minWidth="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewController">
+   <children>
+      <SplitPane dividerPositions="0.24228395061728394" layoutX="242.0" layoutY="131.0" maxWidth="800.0" minWidth="800.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane maxHeight="500.0" maxWidth="177.0" minHeight="500.0" minWidth="177.0" prefHeight="500.0" prefWidth="177.0" SplitPane.resizableWithParent="false">
+               <children>
+                  <Button id="penButton" fx:id="fillButton" alignment="CENTER" layoutX="51.0" layoutY="57.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Fill">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resource/paint_bucket.png" />
+                           </image>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="penButton" alignment="CENTER" layoutX="51.0" layoutY="19.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Pen">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resource/pencil.png" />
+                           </image>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Circle fx:id="red" fill="#ff1f1f" layoutX="69.0" layoutY="189.0" radius="17.0" stroke="BLACK" strokeType="INSIDE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Circle>
+                  <Circle fx:id="orange" fill="#ff951f" layoutX="115.0" layoutY="189.0" radius="17.0" stroke="BLACK" strokeType="INSIDE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Circle>
+                  <Circle fx:id="yellow" fill="#f1ff1f" layoutX="69.0" layoutY="231.0" radius="17.0" stroke="BLACK" strokeType="INSIDE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Circle>
+                  <Circle fx:id="green" fill="#1fff4e" layoutX="115.0" layoutY="231.0" radius="17.0" stroke="BLACK" strokeType="INSIDE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Circle>
+                  <Circle fx:id="lightBlue" fill="#1fdfff" layoutX="70.0" layoutY="272.0" radius="17.0" stroke="BLACK" strokeType="INSIDE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Circle>
+                  <Circle fx:id="darkBlue" fill="DODGERBLUE" layoutX="116.0" layoutY="272.0" radius="17.0" stroke="BLACK" strokeType="INSIDE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Circle>
+                  <Circle fx:id="purple" fill="#6e1fff" layoutX="70.0" layoutY="313.0" radius="17.0" stroke="BLACK" strokeType="INSIDE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Circle>
+                  <Circle fx:id="rose" fill="#f61fff" layoutX="116.0" layoutY="313.0" radius="17.0" stroke="BLACK" strokeType="INSIDE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Circle>
+                  <Circle fx:id="white" fill="WHITE" layoutX="71.0" layoutY="352.0" radius="17.0" stroke="BLACK" strokeType="INSIDE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Circle>
+                  <Circle fx:id="black" layoutX="116.0" layoutY="352.0" radius="17.0" stroke="BLACK" strokeType="INSIDE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Circle>
+                  <Text layoutX="38.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected color:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Circle fx:id="selectedColor" fill="DODGERBLUE" layoutX="96.0" layoutY="450.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Button id="penButton" fx:id="clearButton" alignment="CENTER" layoutX="51.0" layoutY="94.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Clear">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resource/delete.png" />
+                           </image>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="penButton" fx:id="saveButton" alignment="CENTER" layoutX="51.0" layoutY="131.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Save">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resource/save.png" />
+                           </image>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane maxWidth="610.0" minWidth="453.0" prefHeight="500.0" prefWidth="493.0" SplitPane.resizableWithParent="false">
+               <children>
+                  <TilePane fx:id="tile" layoutX="18.0" layoutY="38.0" maxWidth="578.0" minWidth="453.0" prefHeight="440.0" prefWidth="578.0" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="38.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></TilePane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
